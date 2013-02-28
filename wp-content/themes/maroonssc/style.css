@@ -1,0 +1,325 @@
+@charset "utf-8";
+/*
+Theme Name: Maroons Soccer Club
+Theme URI: http://www.jameskrayer.com/
+Description: Version 1.0 of a custom wordpress theme for Maroons's Soccer Club of Ridgewood, NJ. by James Krayer
+Author: the WordPress team
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: red, soccer, sports, two-columns, fixed-width, custom-header, custom-background,  translation-ready, editor-style, custom-menu
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+
+/* Type
+ *
+*/
+body {color:#0d0d0d; font-family:Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5 {font-family: 'Alfa Slab One', cursive;}
+b, strong {font-weight:700;}
+i, em {font-style:italic;}
+
+h1 {font-size:2.1875em; letter-spacing:2px; line-height:110%;}
+
+h6 {}
+
+p {}
+
+
+/**
+ * Color - OO
+*/
+.fff {color:#fff;}
+.g0d0 {color:#0d0d0d;}
+
+
+/**
+ * Text Links
+
+.category-excerpt-h1 a {color:#0d0d0d; text-decoration:none;}
+.category-excerpt-h1 a:hover {color:#990000; text-decoration:none;}
+a {color:#005bab;}
+a:hover {color:#990000;}
+*/
+.n2u {text-decoration:none;}
+.n2u:hover {text-decoration:underline;}
+
+
+/* BUT WAIT: THERE'S MORE
+ * @internal Still Questioning the separation of color/Type
+  - Actually it is SINCE layout and look should be separate.
+  - So let's work on that.
+--------------------------------- */
+
+
+/* Layout
+ * 1024x768 = 15" monitors, iPads in landscape view
+--------------------------------- */
+.site-wrapper {width:960px; margin:0 auto; padding-top:2px; background:url(img/bg-content.png) repeat-y 0 0;}
+.content-wrapper {width:940px; margin:0 auto; background:#f3f3f3;}
+
+.site-header {height:121px; margin-bottom:40px; padding:10px 0 0 10px; position:relative;}
+.site-header.wide-nav {height:142px;}
+.site-logo {}
+
+.site-footer {background-color:transparent; position:relative;}
+.footer-copyright {font-weight:700; font-size:.75em; color:#ffffff; padding:20px 0 19px 19px;}
+
+
+
+/* Links
+ * Image Replacement
+--------------------------------- */
+.link-ir {display:block; overflow:hidden; text-indent:-999px; background:url(img/sprite-btns.png) no-repeat 0 0;}
+.link-ira a {display:block; overflow:hidden; text-indent:-999px; background:url(img/sprite-btns.png) no-repeat 0 0;}
+.backtotop {width:50px; height:50px; background: url(img/back-to-top.png) no-repeat -58px 0; position:absolute; z-index:2; top:-19px; right:16px;}
+.backtotop:hover {background-position:-116px 0;}
+.readmore {width:94px; height:27px; position:absolute; top:0; right:0;}
+.readmore:hover {background-position: 0 -29px;}
+.oldposts a {width:101px; height:27px; background-position: -96px 0;}
+.oldposts a:hover {background-position: -96px -29px;}
+.newposts a {width:106px; height:27px; background-position: -199px 0;}
+.newposts a:hover {background-position: -199px -29px;}
+
+.interior-content-wrapper {width:620px; margin-bottom:40px; padding-right:15px; float:left; border-right:1px solid #e8e8e8;}
+.interior-sidebar {width:260px; margin-right:29px; float:right; height:500px;}
+
+
+/* Site Navigation
+--------------------------------- */
+.primary-site-nav {position:absolute; top:78px; right:9px;}
+.primary-site-nav.wide-nav {position:absolute; top:138px; left:10px; right:auto;}
+.primary-site-nav ul {padding-left:0px;}
+.primary-site-nav ul li {padding:0 9px; float:left;}
+/* NEEDS:
+ * Black border for open submenus
+*/
+.primary-site-nav a {font-size:.875em; font-weight:bold; text-decoration:none; color:#0d0d0d; padding-bottom:5px;}
+.primary-site-nav a:hover {border-bottom:2px solid #bbbbbb;}
+.primary-site-nav .current_page_item a {border-bottom:2px solid #990000;}
+.primary-site-nav .over a {border-bottom:2px solid #000000;}
+
+	.primary-site-nav ul li .sub-menu {display:none; position:absolute; top:24px; margin-left:-15px; background-color:#000000; background-color:rgba(0, 0, 0, 0.8); z-index:5;}
+	.primary-site-nav ul li:hover .sub-menu {display:block;}
+  .primary-site-nav ul li .sub-menu li {float:none; padding:7px 15px 8px; border-bottom:1px solid #fff;}
+	.primary-site-nav ul li .sub-menu li a {border-bottom:none; color:#fff; font-weight:400;}
+
+
+
+/* Home Page Post Excerpt Module
+--------------------------------- */
+.home-excerpts-wrapper {padding-bottom:40px;}
+.home-post-excerpt {width:291px; height:291px; padding:10px; float:left; position:relative; overflow:hidden;}
+.red {border:1px solid #990000; background-color:#990000; color:#fff;}
+.red h1 {background: rgb(153, 0, 0); /* The Fallback */ background: rgba(153, 0, 0, 0.8);}
+.yellow {border:1px solid #fcbe18; background-color:#fcbe18;}
+.yellow h1 {background: rgb(252, 190, 24); /* The Fallback */ background: rgba(252, 190, 24, 0.8);}
+.third {width:292px;}
+.home-excerpt {font-size:.875em; line-height:150%;}
+
+.with-img img {position:absolute; top:0px; left:0px; min-height:311px; min-width:311px;}
+.with-img h1 {margin-right:-1px; padding:10px 11px 10px 10px; position:absolute; z-index:2;}
+.with-img .tl {top:10px; left:0;}
+.with-img .tr {top:10px; right:0; text-align:right;} /*  margin-right:-1px; */
+.with-img .bl {bottom:10px; left:0;}
+.with-img .br {bottom:10px; right:0px; text-align:right;}
+.with-img .mid {}
+
+
+/* Category
+ * Excerpt Module
+--------------------------------- */
+.category-excerpts-wrapper {}
+.category-post-excerpt {}
+.category-post-footer {margin-bottom:35px; padding-right:109px; position:relative;}
+.single-post-footer {position:relative;}
+.title-date {margin-bottom:23px; padding-left:30px; border-left:2px solid#fff200; position:relative; left:-2px;}
+  .title-date.no-stripe {border-left-color:transparent;}
+.date {color:#404040; font-size:.875em;}
+.category-excerpt {margin-bottom:22px; padding-left:30px; line-height:150%;}
+.tag-list {padding-left:30px;}
+/*h6*/.read-more {font-size:.875em;}
+/*p*/.tags {font-size:.875em;}
+
+
+/* Category
+ * Others
+--------------------------------- */
+.category-nav {margin-left:30px; padding-top:40px;}
+.category-nav ul li {float:left; margin-right:7px;}
+
+
+/* Widgets
+--------------------------------- */
+/* For Every Widget */
+.widget {}
+/* For Widgets in the sidebar */
+.sidebar-widget {margin-bottom:27px;}
+
+.sponsors-widget {width:860px; margin:0 auto; padding:15px 0 13px; display:table; text-align:center; background:url(img/divider-widepage.gif) no-repeat 50% 0;}
+.sponsors-widget ul {}
+.sponsors-widget ul li {padding:15px; display:inline-block;}
+/* All Widgets that produce some sort of navigation */
+.sidebar-widget .menu {margin-bottom:1px;}
+.sidebar-widget .menu a {height:30px; width:242px; padding:0 9px; display:table-cell; vertical-align:middle; background:url(img/bg-sidebarnav.gif) repeat-x 0 -30px #ebebeb; color:#0d0d0d; text-decoration:none; font-size:.875em; font-weight:700;}
+.sidebar-widget .menu a:hover {color:#fff; background-position:0 0;}
+
+
+/* Modifier's
+--------------------------------- */
+.hide {display:none;}
+
+
+/* JS Support
+ * JS fixes for css not supported
+--------------------------------- */
+.runin {display:run-in;}
+
+
+/********************************************
+ * Layout
+********************************************/
+
+
+/* Forms */
+form {display:block;}
+
+/* .wysiwyg-content */
+.wysiwyg-content {margin-left:30px;}
+
+
+/* Enhance Layout Styles
+------------------------------------------ */
+
+/* CSS3 */
+.content-wrapper {border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+
+
+/* Unique Visual Styles
+------------------------------------------ */
+
+
+
+/* Clear
+------------------------------------------ */
+.clear-all:before, .clear-all:after {content:""; display:table;}
+.clear-all:after {clear:both;}
+/* For IE 6/7 (trigger hasLayout) */
+.clear-all {zoom:1;}
+
+
+
+
+/********************************************
+ * Skin
+********************************************/
+
+/* Form Styles
+--------------------------------- */
+.search-form {width:246px; position:absolute; top:26px; right:18px;}
+.contact-form {margin:23px 0 0 30px;}
+
+.label {width:84px; display:inline-block; font-size:.875em; font-weight:700;}
+.message-label {padding:9px 4px 0 0; float:left;}
+
+.heavy-input-type {font:700 .875em Arial, Helvetica, sans-serif; color:#404040;}
+.light-input-type {font:400 .875em Arial, Helvetica, sans-serif; color:#404040;}
+
+/* Inputs */
+.input-wrapper {margin-bottom:20px;}
+.input {width:208px; height:23px; padding:0 5px; border:1px solid #bbb; background:url(img/bg-input.gif) repeat-x 0 0;}
+.text-area {width:208px; height:133px; padding:5px; border:1px solid #bbb; background:url(img/bg-textarea.gif) repeat-x 0 100% #fff;}
+.wide-input {width:344px;}
+
+.select {width:208px; height:25px; padding-top:1px; border:1px solid #bbb; background:url(img/bg-input.gif) repeat-x 0 0;}
+.wide-select {width:356px;}
+/* Submit Image Replacement */
+.submit-image {border:none; background:url(img/sprite-searchbtn.gif) no-repeat 0 0; overflow:hidden; text-indent:-999px; cursor:pointer;}
+.search-submit-image {width:25px; height:25px; background-position:0 0; position:absolute; top:0; right:0;}
+.search-submit-image:hover {background-position:0 -25px;}
+.contact-submit-image {width:99px; height:27px; margin-left:84px; background: url(img/sprite-btns.png) no-repeat -306px 0;}
+.contact-submit-image:hover {background-position:-306px -29px;}
+
+
+/* .wysiwyg-content
+ * Tags Provided by TIMYMCE
+  - B, I, <del>, UL, OL, Blockquote, a, p, address, pre, H1-H6
+------------------------------------------ */
+.wysiwyg-content {color:#0d0d0d; font-family:Arial, Helvetica, sans-serif; font-size:1em; line-height:160%; }
+
+.wysiwyg-content a {color:#005bab; text-decoration:none;}
+.wysiwyg-content a:hover {text-decoration:underline;}
+
+.wysiwyg-content h2 {font-size:1.875em; letter-spacing:2px; margin-bottom:15px; line-height:110%;}
+.wysiwyg-content h3 {font-size:1.5625em; letter-spacing:2px; margin-bottom:15px;}
+.wysiwyg-content h4 {font-size:1.25em; letter-spacing:1px; margin-bottom:16px;}
+.wysiwyg-content h5 {font-size:1em; letter-spacing:1px; margin-bottom:17px;}
+.wysiwyg-content h6 {font-family:Arial, Helvetica, sans-serif; font-weight:bold; display:run-in;}
+
+.wysiwyg-content table {margin:24px 0 26px 0; font-size:.875em; border-bottom:1px solid #e5e5e5; border-top:1px solid #d9d9d9;}
+.wysiwyg-content table.test {border-bottom:1px solid #ffe599;}
+.wysiwyg-content table thead {font-weight:bold; background-color:#e5e5e5;}
+.wysiwyg-content table thead tr {border-left:1px solid #d9d9d9;}
+.wysiwyg-content table thead tr th {vertical-align:middle; padding:5px; border-right:1px solid #d9d9d9;}
+.wysiwyg-content table tbody tr {background-color:#ffffff;}
+.wysiwyg-content table tbody .altrow {border-left:1px solid #ffe599; background-color:#fff2cc;}
+.wysiwyg-content table tbody .altrow td {border-right:1px solid #ffe599;}
+.wysiwyg-content table tbody .hover {border-left:1px solid #fff2cc; background-color:#ffe599; cursor:pointer;}
+.wysiwyg-content table tbody .hover td {border-right:1px solid #fff2cc;}
+.wysiwyg-content table tbody tr {border-left:1px solid #e5e5e5;}
+.wysiwyg-content table tbody tr td {text-align:center; vertical-align:middle; padding:5px; line-height:130%; border-right:1px solid #e5e5e5;}
+
+.wysiwyg-content p {margin-bottom:18px;}
+
+.wysiwyg-content ol, .wysiwyg-content ul {margin:22px 20px 22px 34px; list-style-position:outside;}
+.wysiwyg-content ol li, .wysiwyg-content ul li {margin-bottom:6px;}
+.wysiwyg-content ul {list-style-type:disc;}
+.wysiwyg-content ol {list-style-type:decimal; margin-left:41px;}
+
+.wysiwyg-content blockquote {margin-bottom:20px; padding:10px; background-color:#e0e0e0; font-style:italic; font-size:.875em;}
+.wysiwyg-content pre {margin-bottom:20px; padding:10px; background-color:#333333; color:#fff; font-family:"Courier New", Courier, monospace; font-size:.875em;}
+/* CSS3 */
+.wysiwyg-content blockquote, .wysiwyg-content pre {border-radius: 5px;}
+
+.wysiwyg-content address {margin-bottom:20px; font-style:italic;}
+
+
+
+/********************************************
+ * JS Support
+********************************************/
+.runin {display:run-in;} /* Not Supported in FF */
+
+
+/********************************************
+ Objects
+********************************************/
+
+/**
+ * Margin / Padding 
+*/
+.pb8 {padding-bottom:8px;}
+.mb14 {margin-bottom:14px;}
+
+/**
+ * Responsive Images
+ *
+ * images may need max widths set in px
+ * images may also need a left|center|right alignment
+ * these should be set in the project sheet
+*/
+.img-full-wrapper {width:100%; height: 100%;}
+.img-full-wrapper img {width:auto; height:auto;

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.className += ' js';</script>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <title>Meaningful Page Title | Maroons Soccer Club</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" media="screen, projector">
+
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+  <!-- BEGIN: .site-wrapper -->
+  <section class="site-wrapper">
+  	<div class="content-wrapper">
+      <header class="site-header">
+        <h1 class="site-logo"><a href="LinkToHome" title="Go to Marron's Soccer Club Home"><img src="img/logo.png" width="328" height="121" alt="Maroons Soccer Club" /></a></h1>
+        <nav class="primary-site-nav">
+          <ul>
+            <li><a href="" title="Link to About Page">About</a></li>
+            <li><a href="" title="Link To Programs">Programs</a></li>
+            <li><a href="" title="">Tryouts</a></li>
+            <li><a href="" title="">Tournaments</a></li>
+            <li><a href="" title="" class="current">News and Events</a></li>
+            <li><a href="" title="">Contact</a></li>
+          </ul>
+        </nav>
+        <form action="<?php htmlentities($_SERVER['PHP_SELF']) ?>" method="get" name="" id="" class="search-form">
+          <label for="search-field" class="hide">Search:</label>
+          <input type="search" name="search-field" id="search-field" class="input search heavy-input-type" value="Search" />
+          <label for="search-submit" class="hide">Submit:</label>
+          <input type="submit" name="search-submit" id="search-submit" class="submit-image search-submit-image">
+        </form>
+      </header>
+<!-- 
+  The Above is for header.php
+############################# -->
+
+<!-- BEGIN single.php/page.php content
+
+  SECTION NOTES:
+  B, I, Strikethrough <del>, UL, OL, Blockquote, a, p, address, pre, H1-H6
+   
+-->
+			<div class="clear-all"> <!-- Clearing div for content + sidebar -->
+      <section class="interior-content-wrapper category-excerpts-wrapper clear-all">
+
+      	<article class="category-post-excerpt">
+          <div class="wysiwyg-content">
+          	<p>Maroons Hotline Number: <a href="tek:201-612-1281" title="Call for information regarding field closures and other important information.">201-612-1281</a></p>
+            <p>Call this number for information regarding field closures and other important information. Frequently check Maroons SC website for News &amp; Events, Message Board, Field / Practice info, etc.</p>
+          </div>
+            <form action="<?php htmlentities($_SERVER['PHP_SELF']) ?>" method="get" name="" id="" class="contact-form">
+            	<div class="input-wrapper">
+                <label for="name-field" class="label">Name:</label>
+                <input type="text" name="name-field" id="name-field" class="input wide-input text light-input-type" />
+              </div>
+            	<div class="input-wrapper">
+                <label for="email-field" class="label">Email:</label>
+                <input type="email" name="email-field" id="email-field" class="input wide-input email light-input-type" />
+							</div>
+            	<div class="input-wrapper">
+                <label for="subject-field" class="label">Subject:</label>
+                <input type="text" name="subject-field" id="subject-field" class="input wide-input text light-input-type" />
+							</div>
+            	<div class="input-wrapper">
+                <label for="contact-field" class="label">Contact:</label>
+                <select name="contact-field" id="contact-field" class="select wide-select light-input-type">
+                  <option value="carolynmuccio1@yahoo.com">Carolyn Muccio</option>
+                  <option value="carolynmuccio1@yahoo.com">Carolyn Muccio</option>
+                  <option value="carolynmuccio1@yahoo.com">Carolyn Muccio</option>
+                  <option value="carolynmuccio1@yahoo.com">Carolyn Muccio</option>
+                </select>
+              </div>
+            	<div class="input-wrapper">
+                <label for="message-field" class="label message-label">Message:</label>
+                <textarea name="message-field" id="message-field" class="text-area wide-input light-input-type"></textarea>
+            	</div>
+
+              <label for="contact-submit" class="hide">Submit:</label>
+              <input type="submit" name="contact-submit" id="contact-submit" class="submit-image contact-submit-image">
+          </form>
+        </article>
+
+      </section>
+
+      <aside class="interior-sidebar">
+      	<section class="widget sidebar-widget">
+<!--    	<h3>Title Which I May Not Use</h3> -->
+          <div class="content-widget">
+          <!-- <a href="aurl.html" title="Register For Tryouts!"></a> -->
+          	<img src="img/tryouts.jpg" width="260" height="72" alt="Tryouts: Register Now" />
+          </div>
+        </section>
+      	<section class="widget sidebar-widget">
+<!--    	<h3>Title Which I May Not Use</h3> -->
+          <nav class="navigation-widget">
+          	<ul>
+            	<li><a href="" title="Link To X">Store</a></li>
+            	<li><a href="" title="Link To X">Teams</a></li>
+            	<li><a href="" title="Link To X">Coaches</a></li>
+            	<li><a href="" title="Link To X">Schedules</a></li>
+            	<li><a href="" title="Link To X">Directions</a></li>
+            	<li><a href="" title="Link To X">FAQ</a></li>
+            </ul>
+          </nav>
+        </section>
+      </aside>
+
+      </div> <!-- Clearing div for content + sidebar -->
+
+
+<!-- END category.php content -->
+
+
+<!-- BEGIN sponsor widget
+
+  SECTION NOTES:
+   * Thinking I want the sponsors section as a widget that allows an image
+     to be selectied from the media manager
+   * Possible additional image size: http://codex.wordpress.org/Function_Reference/add_image_size
+-->
+
+      <aside class="widget sponsors-widget clear-all">
+      	<ul>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo01.gif" width="90" height="56" alt="Nike" /></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo02.gif" width="83" height="56" alt="Adidas"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo03.gif" width="127" height="56" alt="Spalding"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo01.gif" width="90" height="56" alt="Nike" /></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo02.gif" width="83" height="56" alt="Adidas"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo03.gif" width="127" height="56" alt="Spalding"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo01.gif" width="90" height="56" alt="Nike" /></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo02.gif" width="83" height="56" alt="Adidas"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo03.gif" width="127" height="56" alt="Spalding"></a></li>
+        </ul>
+      </aside>
+
+
+
+<!-- END sponsor widget -->
+
+<!-- #############################
+  The Below is for footer.php
+-->
+		</div>    
+    <footer class="content-wrapper site-footer">
+    	<p class="footer-copyright">&copy; 2012 Maroons Soccer Club Ridgewood, NJ</p>
+      <a href="#top" title="Back to the Top of this Page" class="link-ir backtotop">Back To Top</a>
+    </footer>
+  </section>
+  <!-- END: .site-wrapper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/site.js"></script>
+ </body>
+</html>

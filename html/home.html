@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>document.documentElement.className += ' js';</script>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <title>Meaningful Page Title | Maroons Soccer Club</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" media="screen, projector">
+
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+  <!-- BEGIN: .site-wrapper -->
+  <section class="site-wrapper">
+  	<div class="content-wrapper">
+      <header class="site-header">
+        <h1 class="site-logo"><a href="LinkToHome" title="Go to Marron's Soccer Club Home"><img src="img/logo.png" width="328" height="121" alt="Maroons Soccer Club" /></a></h1>
+        <nav class="primary-site-nav">
+          <ul>
+            <li><a href="" title="Link to About Page">About</a></li>
+            <li><a href="" title="Link To Programs">Programs</a></li>
+            <li><a href="" title="">Tryouts</a></li>
+            <li><a href="" title="">Tournaments</a></li>
+            <li><a href="" title="">News and Events</a></li>
+            <li><a href="" title="">Contact</a></li>
+          </ul>
+        </nav>
+        <form action="<?php htmlentities($_SERVER['PHP_SELF']) ?>" method="get" name="" id="" class="search-form">
+          <label for="search-field" class="hide">Search:</label>
+          
+          <label for="search-submit" class="hide">Submit:</label>
+          <input type="submit" name="search-submit" id="search-submit" class="submit-image search-submit-image">
+        </form>
+      </header>
+<!-- 
+  The Above is for header.php
+############################# -->
+
+<!-- BEGIN home.php content
+
+  SECTION NOTES:
+   * Need the php to add the class 'hide' to p.excerpts with a post photo
+   * Need the php to add the class 'with-img" to article.home-post-excerpt with a post photo
+   * Will need to add positioning control for the home picture to the post admin page.
+   * Possible additional image size: http://codex.wordpress.org/Function_Reference/add_image_size
+-->
+
+      <section class="home-excerpts-wrapper clear-all">
+
+      	<article class="home-post-excerpt red">
+        	<h1>League MVP Awarded</h1>
+          <p class="home-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sapien non augue tempus elementum. Aliquam ultrices fermentum nulla, vitae convallis tortor rhoncus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque, leo in vehicula adipiscing, elit nunc elementum elit, eget blandit metus nulla a nisl. Phasellus rutrum &hellip;</p>
+        </article>
+
+      	<article class="home-post-excerpt yellow with-img">
+        	<h1 class="br">Time For Team Photos</h1>
+          <img src="img/sample01.jpg" width="311" height="311" alt="Team Kickaball" />
+          <p class="excerpt hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sapien non augue tempus elementum. Aliquam ultrices fermentum nulla, vitae convallis tortor rhoncus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque, leo in vehicula adipiscing, elit nunc elementum elit, eget blandit metus nulla a nisl. Phasellus rutrum &hellip;</p>
+        </article>
+
+      	<article class="home-post-excerpt red third with-img">
+        	<h1 class="br">The Title of an Article</h1>
+          <img src="img/sample02.jpg" width="313" height="311" alt="Girls Soccer" />
+          <p class="excerpt hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sapien non augue tempus elementum. Aliquam ultrices fermentum nulla, vitae convallis tortor rhoncus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque, leo in vehicula adipiscing, elit nunc elementum elit, eget blandit metus nulla a nisl. Phasellus rutrum &hellip;</p>
+        </article>
+      	
+        <article class="home-post-excerpt yellow with-img">
+        	<h1 class="br">The Title of an Article</h1>
+          <img src="img/sample02.jpg" width="313" height="311" alt="Girls Soccer" />
+          <p class="excerpt hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sapien non augue tempus elementum. Aliquam ultrices fermentum nulla, vitae convallis tortor rhoncus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque, leo in vehicula adipiscing, elit nunc elementum elit, eget blandit metus nulla a nisl. Phasellus rutrum &hellip;</p>
+        </article>
+      	
+        <article class="home-post-excerpt red with-img">
+        	<h1 class="br">League MVP Awarded</h1>
+          <img src="img/sample03.jpg" width="311" height="311" alt="Boys Socccer" />
+          <p class="home-excerpt hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sapien non augue tempus elementum. Aliquam ultrices fermentum nulla, vitae convallis tortor rhoncus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque, leo in vehicula adipiscing, elit nunc elementum elit, eget blandit metus nulla a nisl. Phasellus rutrum &hellip;</p>
+        </article>
+      	
+        <article class="home-post-excerpt yellow third">
+        	<h1>Time For Team Photos</h1>
+          <p class="home-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sapien non augue tempus elementum. Aliquam ultrices fermentum nulla, vitae convallis tortor rhoncus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam scelerisque, leo in vehicula adipiscing, elit nunc elementum elit, eget blandit metus nulla a nisl. Phasellus rutrum &hellip;</p>
+        </article>
+
+      </section>
+
+
+<!-- BEGIN home.php content
+
+  SECTION NOTES:
+   * Thinking I want the sponsors section as a widget that allows an image
+     to be selectied from the media manager
+   * Possible additional image size: http://codex.wordpress.org/Function_Reference/add_image_size
+-->
+
+      <section class="widget sponsors-widget clear-all">
+      	<ul>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo01.gif" width="90" height="56" alt="Nike" /></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo02.gif" width="83" height="56" alt="Adidas"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo03.gif" width="127" height="56" alt="Spalding"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo01.gif" width="90" height="56" alt="Nike" /></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo02.gif" width="83" height="56" alt="Adidas"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo03.gif" width="127" height="56" alt="Spalding"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo01.gif" width="90" height="56" alt="Nike" /></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo02.gif" width="83" height="56" alt="Adidas"></a></li>
+        	<li><a href="test" title="Link To Nike"><img src="img/samplelogo03.gif" width="127" height="56" alt="Spalding"></a></li>
+        </ul>
+      </section>
+
+
+
+<!-- END home.php content -->
+
+<!-- #############################
+  The Below is for footer.php
+-->
+		</div>    
+    <footer class="content-wrapper site-footer">
+    	<p class="footer-copyright">&copy; 2012 Maroons Soccer Club Ridgewood, NJ</p>
+      <a href="#top" title="Back to the Top of this Page" class="link-ir backtotop">Back To Top</a>
+    </footer>
+  </section>
+  <!-- END: .site-wrapper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/site.js"></script>
+ </body>
+</html>
