@@ -19,13 +19,13 @@
 define('DB_NAME', 'jkrayer_maroons');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'aswrdsmaster');
 
 /** MySQL database password */
-define('DB_PASSWORD', '5@,}h[?:H!<:PK2`Erhe');
+define('DB_PASSWORD', '5,}h[?:H!<:PK2`E');
 
 /** MySQL hostname */
-define('DB_HOST', 'db.maroonsoccer.com');
+define('DB_HOST', 'db-ms-com.cjyznlktdu4d.us-east-1.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
